@@ -1,0 +1,84 @@
+  // Primary Color Scheme
+  $pastpaper_primary: #345c7f;      // Main theme color
+  $pastpaper_secondary: #fcbc19;    // Accent color
+  
+  // Theme Colors
+  $pastpaper_theme_bg: #f2f4f8;      // Light theme background
+  $pastpaper_theme_text: #1a1a1a;    // Dark theme text color
+  $pastpaper_theme_dark_bg: #1f2a36; // Dark mode background
+  $pastpaper_theme_dark_text: #eaeaea; // Light text for dark mode
+  
+  // Complementary Colors
+  $pastpaper_dark_accent: #2a4966;   // Darker shade of primary
+  $pastpaper_light_accent: #5588a3;  // Lighter variation of primary
+  $pastpaper_bg_light: #f5f6f5;      // Neutral background
+  $pastpaper_border: #e1e4e6;        // Soft border color
+  $pastpaper_white: #ffffff;         // Pure white background
+  
+  // Button Colors
+  $pastpaper_btn_primary: $pastpaper_primary;
+  $pastpaper_btn_secondary: $pastpaper_secondary;
+  $pastpaper_btn_hover_primary: darken($pastpaper_primary, 10%);
+  $pastpaper_btn_hover_secondary: darken($pastpaper_secondary, 10%);
+  $pastpaper_btn_disabled: #a0a7af; // Greyed_out for disabled state
+  
+  // Hover Effects
+  $pastpaper_hover_light: lighten($pastpaper_primary, 40%);
+  $pastpaper_hover_dark: darken(#2a2a2a, 10%);
+  
+  // Box Shadows
+  $pastpaper_shadow_primary: #8aa0b8;  // Lighter shade of primary for soft shadow
+  $pastpaper_shadow_secondary: #e0a617; // Muted secondary for softer appearance
+  $pastpaper_shadow_soft: #d1d1d1;      // Soft neutral shadow
+  $pastpaper_shadow_strong: #6b6b6b;    // Darker shadow for strong depth
+  
+  // Text Colors
+  $pastpaper_text_primary: #ffffff;
+  $pastpaper_text_dark: #2a2a2a;
+  $pastpaper_text_muted: #6e7b87; // Muted primary color
+  $pastpaper_text_header: #1c3d5a;  // Strong contrast for headers
+  $pastpaper_text_normal: #555555;  // Regular text color
+  $pastpaper_text_light: #9b9b9b;   // Lighter shade for subtexts
+  
+  // Background Colors
+  $pastpaper_bg_primary: lighten($pastpaper_primary, 35%);
+  $pastpaper_bg_secondary: lighten($pastpaper_secondary, 30%);
+  $pastpaper_bg_dark: #121212;       // Dark UI Background
+  $pastpaper_bg_light_alt: #f8f9fa;  // Alternative light background
+  $pastpaper_bg_hover: lighten($pastpaper_primary, 45%);
+  
+  // Border Radius (Using toRem function)
+  $pastpaper_radius_sm: toRem(6);
+  $pastpaper_radius_md: toRem(10);
+  $pastpaper_radius_lg: toRem(25);
+  $pastpaper_radius_full: 100%;
+  
+  // Typography (Using toRem function)
+  $pastpaper_font_size_sm: toRem(16);
+  $pastpaper_font_size_md: toRem(20);
+  $pastpaper_font_size_lg: toRem(26);
+  $pastpaper_font_size_xl: toRem(30);
+  $pastpaper_font_size_xxl: toRem(36); // Extra large text
+  
+  // Font Weights
+  $pastpaper_font_light: 400;
+  $pastpaper_font_regular: 500;
+  $pastpaper_font_bold: 600;
+  $pastpaper_font_extrabold: 700;
+  
+
+  // Add these to your existing variables
+  $pastpaper_active_indicator: $pastpaper_primary;
+  $pastpaper_menu_item_hover: lighten($pastpaper_primary, 48%);
+  $pastpaper_menu_item_active: lighten($pastpaper_primary, 42%);
+
+
+
+  $breakpoints: (
+  xs: 480px,   // Extra Small Devices (Phones)
+  sm: 640px,   // Small Devices (Tablets)
+  md: 768px,   // Medium Devices (Small Laptops)
+  lg: 1024px,  // Large Devices (Laptops)
+  xl: 1280px,  // Extra Large Devices (Desktops)
+  xxl: 1536px  // Extra Extra Large Devices (Large Screens)
+);

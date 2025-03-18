@@ -1,0 +1,66 @@
+.field {
+    position: relative;
+    width: 100%;
+  
+    & input,
+    & select {
+      width: 100%;
+      padding: toRem(12) toRem(15);
+      border: toRem(1) solid $pastpaper_border;
+      border-radius: toRem(8);
+      font-size: toRem(14);
+      color: $pastpaper_text_dark;
+      background-color:$pastpaper_white;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+      &:focus {
+        border-color:  $pastpaper_primary;
+        box-shadow: 0 0 toRem(5) rgba( $pastpaper_primary, 0.2);
+      }
+  
+      &.error_border {
+        border-color: #e63946; 
+      }
+  
+      &[type="password"] {
+        padding-right: toRem(50);
+      }
+  
+      &[disabled] {
+        background-color: #f1f3f5;
+        cursor: not-allowed;
+      }
+    }
+  
+    & .input_border {
+      border: toRem(1) solid $pastpaper_border;
+    }
+  
+    & .togglePassword {
+      position: absolute;
+      top: 50%;
+      right: toRem(10);
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+  
+      & svg {
+        font-size: toRem(20);
+        color:$pastpaper_text_header;
+      }
+    }
+  
+    & .icon {
+      position: absolute;
+      top: 50%;
+      left: toRem(12);
+      transform: translateY(-50%);
+      font-size: toRem(20);
+      color:$pastpaper_text_header;
+    }
+  }

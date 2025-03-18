@@ -1,0 +1,50 @@
+.no_data_container {
+    height: 25vh;
+    width: 25vw;
+    margin: toRem(16) auto;
+    animation: fadeIn 1s ease-in-out;
+  
+    .no_data_image {
+      height: auto;
+      margin-bottom: toRem(16);
+      animation: bounceSlow 2s infinite;
+    }
+  
+    .no_data_text {
+      font-size: toRem(18);
+      color: #3f3d56;
+      text-align: center;
+      font-weight: 500;
+      animation: fadeInUp 1s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes bounceSlow {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  }

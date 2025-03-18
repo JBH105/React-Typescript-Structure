@@ -1,0 +1,29 @@
+@use "sass:math";
+
+@function toRem($pixel) {
+  @if math.is-unitless($pixel) {
+    // divide $pixels by 16 to get rem
+    @return math.div($pixel, 16)+rem;
+  }
+
+  @else {
+    @error 'Do not use units when using the toRem() function; only numbers allowed';
+  }
+}
+
+@function toEm($pixel) {
+  @if math.is-unitless($pixel) {
+    // divide $pixels by 16 to get rem
+    @return math.div($pixel, 16)+em;
+  }
+
+  @else {
+    @error 'Do not use units when using the toRem() function; only numbers allowed';
+  }
+}
+/* ===== Usage ===== */
+// div {
+//   width: toRem(400);
+//   height: toRem(400);
+//  font-size: toVw(20px);
+// }

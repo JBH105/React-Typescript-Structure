@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "outDir": "./build",
+    //"rootDir": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "pretty": true,
+    "useUnknownInCatchVariables": false,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noImplicitAny": true /* Fix the issue you have with import shared library and then change this back to true */,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    //absolute import
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["./assets/*"],
+      "@app/*": ["./app/*"],
+      "@config/*": ["./core/config/*"],
+      "@core/*": ["./core/*"],
+      "@pages/*": ["./features/pages/*"],
+      "@auth/*": ["./features/auth/*"],
+      "@wallet/*": ["./features/wallet/*"],
+      "@student/*": ["./features/student/*"],
+      "@features/*": ["./features/*"],
+      "@shared/*": ["./shared/*"],
+      "@store/*": ["./store/*"],
+      "@src/*": ["/*"]
+    }
+  },
+  "include": ["src/**/*", "jest.setup.ts", "src/features/home/components/program/view/.tsx"],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

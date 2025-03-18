@@ -1,0 +1,35 @@
+.not-found-image-container {
+    margin-bottom: toRem(16); 
+  }
+  
+  .not-found-image {
+    width: toRem(256);
+    height: toRem(256);
+    object-fit: contain; 
+  }
+  
+  .not-found-title {
+    font-size: toRem(36); 
+    font-weight: $pastpaper-font-bold;
+    color:  $pastpaper_text_dark;
+    margin-bottom: toRem(16); 
+  }
+  
+  .not-found-description {
+    color: $pastpaper_text_dark; 
+    margin-bottom: toRem(32); 
+  }
+  
+  .not-found-button {
+    padding: toRem(12) toRem(24);
+    color: $pastpaper_text_primary; 
+    background-color: $pastpaper_btn_primary; 
+    border-radius: toRem(8);
+    text-decoration: none;
+    transition: background-color 300ms, transform 300ms; 
+  
+    &:hover {
+      background-color: $pastpaper_btn_primary; 
+      transform: scale(1.02); 
+    }
+  }

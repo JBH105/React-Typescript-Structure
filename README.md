@@ -1,4 +1,4 @@
-# Structured
+# Structure
 
 ## Description
 A structured web application built with TypeScript, React, and modular folder organization for scalability and maintainability.

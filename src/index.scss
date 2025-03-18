@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'assets/scss/utils/';
+@import 'assets/scss/layout/index';
+@import 'assets/scss/global/index';
+@import 'assets/scss/components/index';
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color:$pastpaper-secondary;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #345C7F;
+    border-radius: 4px;
+
+    &:hover {
+      background: #345C7F;
+    }
+  }
+}
